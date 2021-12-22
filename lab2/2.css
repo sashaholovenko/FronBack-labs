@@ -1,0 +1,238 @@
+body {
+    font: 18px Arial;
+    background-color: white;
+}
+
+p {
+    margin: 0 1px;
+}
+#wrapper {
+    margin: auto;
+}
+
+.list1 {
+    list-style-type: upper-roman;
+  }
+
+.list2 {
+    list-style-type: disc;
+}
+
+.list3 {
+    list-style-type: circle;
+}
+
+.list4 {
+    list-style-type: "\1F44D";
+}
+
+.list5 {
+    list-style-image: url("http://htmlbook.ru/files/images/faq/faq_list5_2.png");
+}
+
+.list6 {
+    list-style: decimal inside;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 250px;
+    box-shadow: 0 3px 10px 3px rgba(0,0,0,0.15)
+}
+
+.title {
+    text-align: center;
+    margin-left: 18px;
+}
+
+.top-menu {
+    margin: 0;
+    padding: 10px;
+
+}
+
+.lab-number {
+    font-size: medium;
+    
+    text-align: center;
+}
+
+li.lists {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 2px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+.top-menu li.active { /*відображення конкретної сторінки*/
+    background: rgb(0, 236, 79);
+    color: #fff;
+}
+
+.top-menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+.menu {
+    position: fixed;
+    float: left;
+    padding-top: 230px;
+    width: 320px;
+    padding-bottom: 10px;
+}
+
+.menu-list {
+    padding: 10px;
+    margin-bottom: 0;
+    background-color: #eee;
+}
+
+.menu-list li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div11, #div12, #div13 {
+    display: none;
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+img{
+    max-width: 900px;
+}
+
+.content {
+    float: left;
+    width: 1000px;
+    height: 1000px;
+    padding-top: 250px;
+    padding-left: 350px;
+    border-top: 10px;
+}
+
+.button {
+    background-color: #e0dfdf;
+    font: 15px Courier bold;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 1px solid;
+    min-height: 60px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+#a1, #a2, #a3, #a4 {
+    display: none;
+    background-color: #d0d0d0;
+    font: 15px Courier bold;
+    margin-top: 0;
+    cursor: pointer;
+    border: 1px solid;
+    height: 30px;
+    margin-left: 100px;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+
+}
+
+.structure {
+    background-color: #e0dfdf;
+    font: 15px Courier bold;
+    margin-top: 0;
+    cursor: pointer;
+    border: 1px solid;
+    min-height: 60px;
+    width: 94%;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+}
+.menu-background {
+    background-color: #eee;
+}
+
+h4 {
+    text-align: center;
+    font: 20px Courier bold;
+}
+
+.uml {
+    height: 300px;
+    width: 500px;
+}
+
+#identificator {
+    background-color: #e0dfdf;
+    font: 15px Courier bold;
+    margin-top: 0;
+    cursor: pointer;
+    border: 1px solid;
+    min-height: 60px;
+    width: 94%;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.blue-text {
+    color:cornflowerblue;
+}
+
+/* #div6{
+    width: 200px;
+
+
+} */
+#demo {
+    width: 350px;
+    height: 150px;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
+  }
+#demo2 {
+    width: 350px;
+    height: 150px;
+    margin: 50px;
+    padding: 50px;
+    border: 10px solid black;
+  }
+
+.image1 {
+    float: left; 
+    background: #d6d3a2; 
+    padding: 4px; 
+    margin: 0 6px 4px 0; 
+}
+.image2 {
+    float: right; 
+    background: #d6d3a2; 
+    padding: 4px;
+    width: 33%;
+}
+
+A[target="_blank"]{
+    font-weight: bold;
+    background-color:yellowgreen;
+}

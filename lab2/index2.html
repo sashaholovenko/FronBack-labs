@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="2.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="2.css" type="text/css">
+    <title>Звіти з лабораторних робіт</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="title">
+            <h3> ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br> З ДИСЦИПЛІНИ «Основи Front-end, Back-end розробок»</h3>
+            <p><i>Виконали: студент групи ІП-94 Головенко О., Кострова Марта, ІК-92</i></p>
+        </div>
+        <div class="labs">
+            <nav>
+                <ul class="top-menu">
+                    <li class="lists"><a href="../back-frond-end-labs/index1.html">Лабораторна №1</a></li>
+                    <li class="active lists"><a href="index2.html">Лабораторна №2</a></li>
+                    <li class="lists"><a href="../lab3/index3.html">Лабораторна №3</a></li>
+                    <li class="lists"><a href="../lab4/index4.html">Лабораторна №4</a></li>
+                    <li class="lists"><a href="../lab5-zwit/index5.html">Лабораторна №5</a></li>
+                    <li class="lists"><a href="../lab6/index6.html">Лабораторна №6</a></li>
+                    <li class="lists"><a href="../lab7/index7.html">Лабораторна №7</a></li>
+                    <li class="lists"><a href="../lab8/index8.html">Лабораторна №8</a></li>
+                    <li class="lists"><a href="../lab9/index9.html">Лабораторна №9</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="lab-number">
+            <h1>Лаб робота #2</h1>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-background">
+        <ul class="menu-list">
+            <li><button class="button" onmousedown="view1()">Тема, мета, місце розташування звіту, сайту</button></li>
+            <li><button class="button" onmousedown="view2()">Списки</button></li>
+            <li><button class="button" onmousedown="view3()">Ідентифікатори</button></li>
+            <li><button class="button" onmousedown="view4()">Відступи</button></li>
+            <li><button class="button" onmousedown="view5()">Плаваючі елементи</button></li>
+            
+        </ul>
+        <button class="structure" onmousedown="view()">Селектори</button>
+        <div onmouseover="view()" class="html-code">
+            <button id="a1" onmousedown="op1()">Селектори тегу і класу</button>
+            <button id="a2" onmousedown="op2()">Інші селектори</button>
+            <button id="a3" onmousedown="op3()">Групування селекторів</button>
+        </div>
+        </div>
+    </div>
+    <div class="content">
+        <div id="div1">
+            <h2>Лабораторна робота 2</h2>
+            <h3>Тема:</h3>
+            <p>КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</p>
+            <h3>Мета:</h3>
+            <p>придбати практичні навички роботи  з селекторами,ідентифікаторами, списками,  різноманітними властивостями кольору і фону,  зовнішними та внутрішними  відступами,  плаваючими елементами, оформленням текстових елементів.</p>
+            <h3>Розташування WEB проекту:</h3>
+            <a href="https://github.com/sashaholovenko/back-frond-end-labs"> GitHub</a>
+        </div>
+        <div id="div2">            
+            <h1></h1>
+            <p>У списків є 4 основні варіанти оформлення: <span class="blue-text">list-style-type, list-style-possition, list-style-image</span></p>
+            <p>Список за замовчуванням, виставляється стиль "disc"</p>
+              <ul class="list2">
+                <li>Hummus</li>
+                <li>Pita</li>
+                <li>Green salad</li>
+                <li>Halloumi</li>
+              </ul>
+            <p>Список із стилем "upper-roman"</p>
+            <ul class="list1">
+                <li>Hummus</li>
+                <li>Pita</li>
+                <li>Green salad</li>
+                <li>Halloumi</li>
+              </ul>
+              <p>Список із стилем "circle"</p>
+              <ul class="list3">
+                <li>Hummus</li>
+                <li>Pita</li>
+                <li>Green salad</li>
+                <li>Halloumi</li>
+              </ul>
+              <p>Список із кастомним стилем "\1F44D"</p>
+              <ul class="list4">
+                <li>Hummus</li>
+                <li>Pita</li>
+                <li>Green salad</li>
+                <li>Halloumi</li>
+              </ul>
+              <p>Список з url картинкою у вигляді маркеру</p>
+              <ul class="list5">
+                <li>Hummus</li>
+                <li>Pita</li>
+                <li>Green salad</li>
+                <li>Halloumi</li>
+              </ul>
+              <p>Список з стилем "decimal inside"</p>
+              <ul class="list6">
+                <li>Hummus</li>
+                <li>Pita</li>
+                <li>Green salad</li>
+                <li>Halloumi</li>
+              </ul>
+           
+        </div>
+        <div id="div3">
+            <h3></h3>
+            <h3>Ідентифікатори</h3>
+            <p>Ідентифікатор визначає унікальне ім'я елемента до якого можна застосовувати стилі та скрипти</p>
+            <h4>Ідентифікатор в html</h4>
+            <img src="id-screen.png">
+            <h4>Ідентифікатор в css</h4>
+            <img src="id-css.png">
+            <p>Ідентифікатор не може повторюватись, адже він має бути унікальним. Тому наступний код буде помилкою, тому що ми ідентифікуємо три блоки одним id</p>
+            <img src="id-copy.png">
+        </div>
+        <div id="div4">
+            <h3>Відступи</h3>
+            <p>У блока є 3 елементи відступів: <span class="blue-text"> padding, border, margin</span></p>
+            <p>Padding відповідає за відстань тексту від границь блоку, border відповідає за рамку, margin за відстань між елементами на сторінці</p>
+            <ul> 
+
+                <li><strong>Зміст</strong>: область, де відображається ваш контент, розмір якого можна змінити за допомогою таких властивостей як <span class="blue-text">width</span> та <span class="blue-text">height</span>.</li>
+                <li><strong>Внутрішній відступ</strong>: відступи знаходяться навколо вмісту у вигляді пустого простору. Їх розмір контролюєтся за допомогою <span class="blue-text">padding</span> і пов'язаних методів.</li>
+                <li><strong>Рамка</strong>: рамка навколо змісту та внутрішні відступи. Її розмір і стиль можна контролювати за допомогою <span class="blue-text">border</span> і пов'язаних методів.</li>
+                <li><strong>Зовнішній відступ</strong>: зовнішній шар, який заключає в собі вміст, внутрнішій відступ і рамки. Представляє собою простір між поточним та іншими елементами. Його розмір контролюється за допомогою <span class="blue-text">margin</span> і пов'язанних методів.</li>
+               </ul>
+            <img src="block2.png">
+            <p>Блок з параметрами:
+                margin: 10px;
+                padding: 25px;
+                border: 5px solid black;</p>
+            <div id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa suscipit, quibusdam itaque quasi reprehenderit id veritatis temporibus dolorem hic dignissimos dolore assumenda quae nisi placeat perferendis doloremque esse et repudiandae.</div>
+            <p>Блок із збільшеними параметрами:
+                margin: 50px;
+                padding: 50px;
+                border: 10px solid black;</p>
+            <div id="demo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa suscipit, quibusdam itaque quasi reprehenderit id veritatis temporibus dolorem hic dignissimos dolore assumenda quae nisi placeat perferendis doloremque esse et repudiandae.</div>
+
+            
+            
+            <!-- <div style="width: 200px; background-color: aqua;">
+                <div style="height: 100px; margin: 10px; background-color: blue;"></div>
+             </div> -->
+
+        </div>
+        <div id="div5">
+            <img src="QmZqiGaAuZwJCDUqs9QsatnxMcV85zDwnUVyfNFjK7xMnJ.png" width="150px" height="150px" class="image1">
+            <img src="QmZqiGaAuZwJCDUqs9QsatnxMcV85zDwnUVyfNFjK7xMnJ.png" width="150px" height="150px" class="image2">
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptatibus vel. Molestias, sequi? A ab inventore culpa, ullam porro cumque iste repudiandae accusantium voluptates qui fuga eligendi deleniti quasi quidem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab rerum earum culpa explicabo doloribus non ad quae perspiciatis reiciendis amet consequatur, nostrum eum porro ipsa, sunt nobis tempora distinctio id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatem, adipisci mollitia nesciunt vitae veniam dolores ducimus quia nostrum eius totam quibusdam amet. Error corporis quae eligendi non similique odit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas aliquam ipsam autem incidunt animi? Enim provident maiores sint dignissimos recusandae nihil odio, nobis temporibus velit iusto, quidem incidunt sit eaque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptatibus vel. Molestias, sequi? A ab inventore culpa, ullam porro cumque iste repudiandae accusantium voluptates qui fuga eligendi deleniti quasi quidem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab rerum earum culpa explicabo doloribus non ad quae perspiciatis reiciendis amet consequatur, nostrum eum porro ipsa, sunt nobis tempora distinctio id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatem, adipisci mollitia nesciunt vitae veniam dolores ducimus quia nostrum eius totam quibusdam amet. Error corporis quae eligendi non similique odit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas aliquam ipsam autem incidunt animi? Enim provident maiores sint dignissimos recusandae nihil odio, nobis temporibus velit iusto, quidem incidunt sit eaque?  </p>
+        </div>
+
+        <div id="div11">
+            <h4>Селектор тегу і классу</h4>
+            <h3>Селектор тегу задається просто назвою тегу, наприклад p{...}, h1{...}, div{....}, і буде застосовуватись до всіх тегів (нижче застосовані стилі до всіх заголовків h4</h3>
+            <img src="selector.png">
+            <p>Селектор для классу застосовується за допомогою крапки перед назвою классу. Наприклад .classname  {....}</p>
+            <img src="selector-class.png">
+        </div>
+        <div id="div12">
+            <h3>Універсальний селектор</h3>
+            <p>Існують ще 2 види селекторів, *(зірочка) та селектор атрибуту</p>
+            <p>Зірочка це універсальний селектор для CSS і відповідає будь-якому тегу. Ми можем використати його коли хочемо застосувати щось для всієї сторінки, наприклад шрифт, відступи і тд. На коді нижче ми прибираємо відступи та поля для всіх елементів на сторінки </p>
+            <img src="zrika.png" >
+            <h3>Селектор атрибута</h3>
+            <p>Він допомагає задати стилі для атрибута, його синтаксис наступний: селектор[атрибут^="значення"]{.....}. У наступному фото ми робимо атрибут "href" для тега &lt;a&gt; жирним</p>
+            <p><a href="google.com">Звичайна сторінка</a> | <a href="https://github.com/egonSchiele/grokking_algorithms" target="_blank">Сторінка у новому вікні</a></p>
+            <img src="selselsel.png">
+
+            
+        </div>
+        <div id="div13">
+            <h3>Групування селекторів</h3>
+            <p>Для групування селекторів потрібно просто просто написати їх у ряд, або у стовпчик</p>
+            <img src="selector-group.png">
+            <img src="">
+            
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
