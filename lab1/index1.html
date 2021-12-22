@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="1.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="1.css" type="text/css">
+    <title>Звіти з лабораторних робіт</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="title">
+            <h3> ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br> З ДИСЦИПЛІНИ «Основи Front-end, Back-end розробок»</h3>
+            <p><i>Виконали: студент групи ІП-94 Головенко О., Кострова Марта, ІК-92</i></p>
+        </div>
+        <div class="labs">
+            <nav>
+                <ul class="top-menu">
+                    <li class="active lists"><a href="index1.html">Лабораторна №1</a></li>
+                    <li class="lists"><a href="../lab2/index2.html">Лабораторна №2</a></li>
+                    <li class="lists"><a href="../lab3/index3.html">Лабораторна №3</a></li>
+                    <li class="lists"><a href="../lab4/index4.html">Лабораторна №4</a></li>
+                    <li class="lists"><a href="../lab5-zwit/index5.html">Лабораторна №5</a></li>
+                    <li class="lists"><a href="../lab6/index6.html">Лабораторна №6</a></li>
+                    <li class="lists"><a href="../lab7/index7.html">Лабораторна №7</a></li>
+                    <li class="lists"><a href="../lab8/index8.html">Лабораторна №8</a></li>
+                    <li class="lists"><a href="../lab9/index9.html">Лабораторна №9</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="lab-number">
+            <h1>Лаб робота #1</h1>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-background">
+        <ul class="menu-list">
+            <li><button class="button" onmousedown="view1()">Опис предметного середовища</button></li>
+            <li><button class="button" onmousedown="view2()">Загальна постановка задачі програми</button></li>
+            <li><button class="button" onmousedown="view3()">Тема,мета, місцезнаходження</button></li>
+        </ul>
+        <button class="structure" onmousedown="view()">Структура документа</button>
+        <div onmouseover="view()" class="html-code">
+            <button id="a1" onmousedown="op1()">HTML-код таблиці</button>
+            <button id="a2" onmousedown="op2()">HTML-код форми</button>
+            <button id="a3" onmousedown="op3()">HTML-код зображення</button>
+            <button id="a4" onmousedown="op4()">HTML-код посилання</button>
+        </div>
+        </div>
+    </div>
+    <div class="content">
+        <div id="div1">
+            <h3>ЛАБОРАТОРНА РОБОТА №1</h3>
+            <h4>Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОГО ГАЛУЗІ.
+                РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, ФОРМАМИ в HTML-ДОКУМЕНТІ.
+            </h4>
+            <h4><b>Опис предметного середовища</b></h4>
+            <p>Сайт "Beauty Bar" - програмна реалізація роботи реєстратури салону краси.
+                Продукт забезпечує моніторинг вільних годин та онлайн-запис клієнта на
+                візит до майстра. Майстру доступний власний кабінет, у якому є розклад
+                його робочого дня. Сайт інформує клієнта про усі доступні процедури, їх
+                вартість та майстрів салону.
+            </p><br>
+            <p>Середовища, в яких ми працювали: VS code, Webstorm </p>
+        </div>
+        <div id="div2">
+            <h3>Загальна постановка задачі програми</h3>
+            <p><b>Предметна область:</b>> робота реэстратури салону краси	<br>
+                <b>Об’єкти взаємодії:</b> форма авторизації та реєстрації, інтерактивний
+                лістинг процедур, вікно онлайн-запису, меню сайту.<br><br>
+
+                <b>Сайт має відповідати наступним функціональним вимогам:</b><br>
+                1.	Інформування клієнта про послуги, їх вартість, майстрів салону<br>
+                2.	Онлайн-запис клієнта на процедру у вільні години<br>
+                3.	Власний кабінет майстра з розкладом роботи<br>
+                4.	Реєстрація клієнтів та майстрів<br>
+                <br>
+
+                <b>Сайт має відповідати наступним нефункціональним вимогам:</b><br>
+                1.	Продукт повинен бути інтуїтивно зрозумілим користувачу<br>
+                2.	Мати презентабельний вигляд<br>
+                3.	Бути легким у використанні<br>
+            </p>
+
+        </div>
+        <div id="div3">
+            <h2>Лабораторна робота 1</h2>
+            <h3>Тема:</h3>
+            <p>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОГО ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, ФОРМАМИ в HTML-ДОКУМЕНТІ.</p>
+            <h3>Мета:</h3>
+            <p>Придбати практичні навички роботи  з HTML-документом, таблицями,формами, зображеннями, посиланнями.Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.</p>
+            <h3>Розташування WEB проекту:</h3>
+            <a href="https://github.com/sashaholovenko/back-frond-end-labs"> GitHub</a>
+
+        </div>
+        <div id="div11">
+            <h3>HTML-код таблиці</h3>
+            <img src="table.png">
+            <img src="tablecode.png">
+        </div>
+        <div id="div12">
+            <h3>HTML-код форми</h3>
+            <img src="form.png">
+            <img src="formcode.png">
+        </div>
+        <div id="div13">
+            <h3>HTML-код зображення</h3>
+            <img src="img.jpeg">
+            <img src="imgcode.png">
+        </div>
+        <div id="div14">
+            <h3>HTML-код посилання</h3>
+            <img src="href.png">
+            <img src="hrefcode.png">
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
