@@ -1,101 +1,114 @@
-// Accordion
-$( function() {
-    $( "#accordion" ).accordion();
-  } );
-
-// Autocomplete
-
-  $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "GoLand",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
-
-// Datapicker
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
+function view1(){
+  document.getElementById("div1").style.display = "block";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("div3").style.display = "none";
+  document.getElementById("div4").style.display = "none";
+  document.getElementById("div5").style.display = "none";
+  document.getElementById("div11").style.display = "none";
+  document.getElementById("div12").style.display = "none";
+  document.getElementById("div13").style.display = "none";
+  document.getElementById("div14").style.display = "none";
 
 
-// Menu
-  $( function() {
-    $( "#menu" ).menu();
-  } );
-
-
-// Slider
-  $( function() {
-    $( "#slider" ).slider();
-  } );
-
-// Tabs
-  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-
-// Tooltip
-  $( function() {
-    $( document ).tooltip();
-  } );
-
-// Gallery
-
-jQuery(document).ready(function(){
-
-    jQuery("#galleryTiles").unitegallery({
-
-        gallery_theme: "tiles",
-
-        tiles_type: "nested"
-
-    });
-
-});
-
-
-
-//////
-$('#date').text(new Date().toLocaleDateString());
-const currencyObj = {
-    USD: 'доллар США',
-    UAH: 'укр. гривна',
-    RUR: 'рос. рубль',
-    EUR: 'евро',
-    BTC: 'биткоин'
 }
-$.getJSON("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5", function (result) {
-    console.log(result);
-    $.each(result, function (i, field) {
-        console.log('field', field);
-        var tr = "<td>" + currencyObj[field.base_ccy] + "</td><td>" + currencyObj[field.ccy] 
-        + "</td><td>" + field.buy + "</td><td>" + field.sale + "</td>";
-        $("#currencyTable tbody").append("<tr>" + tr + "</tr>");
-    });
-});
+
+function view2(){
+  document.getElementById("div2").style.display = "block";
+  document.getElementById("div1").style.display = "none";
+  document.getElementById("div3").style.display = "none";
+  document.getElementById("div4").style.display = "none";
+  document.getElementById("div5").style.display = "none";
+  document.getElementById("div11").style.display = "none";
+  document.getElementById("div12").style.display = "none";
+  document.getElementById("div13").style.display = "none";
+  document.getElementById("div14").style.display = "none";
+
+}
+
+function view3(){
+  document.getElementById("div3").style.display = "block";
+  document.getElementById("div1").style.display = "none";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("div4").style.display = "none";
+  document.getElementById("div5").style.display = "none";
+  document.getElementById("div11").style.display = "none";
+  document.getElementById("div12").style.display = "none";
+  document.getElementById("div13").style.display = "none";
+  document.getElementById("div14").style.display = "none";
+
+}
+
+function view4(){
+  document.getElementById("div4").style.display = "block";
+  document.getElementById("div1").style.display = "none";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("div3").style.display = "none";
+  document.getElementById("div5").style.display = "none";
+  document.getElementById("div11").style.display = "none";
+  document.getElementById("div12").style.display = "none";
+  document.getElementById("div13").style.display = "none";
+  document.getElementById("div14").style.display = "none";
+
+}
+
+function view5(){
+  document.getElementById("div5").style.display = "block";
+  document.getElementById("div1").style.display = "none";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("div3").style.display = "none";
+  document.getElementById("div4").style.display = "none";
+  document.getElementById("div11").style.display = "none";
+  document.getElementById("div12").style.display = "none";
+  document.getElementById("div13").style.display = "none";
+  document.getElementById("div14").style.display = "none";
+
+}
+
+function view(){
+  document.getElementById("a1").style.display = "block";
+  document.getElementById("a2").style.display = "block";
+  document.getElementById("a3").style.display = "block";
+  document.getElementById("a4").style.display = "block";
+  
+  
+}
+
+function op1(){
+  document.getElementById("div11").style.display = "block";
+  document.getElementById("div12").style.display = "none";
+  document.getElementById("div13").style.display = "none";
+  document.getElementById("div14").style.display = "none";
+  document.getElementById("div1").style.display = "none";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("div3").style.display = "none";
+  document.getElementById("div4").style.display = "none";
+  document.getElementById("div5").style.display = "none";
+}
+
+function op2(){
+  document.getElementById("div12").style.display = "block";
+  document.getElementById("div11").style.display = "none";
+  document.getElementById("div13").style.display = "none";
+  document.getElementById("div14").style.display = "none";
+  document.getElementById("div1").style.display = "none";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("div3").style.display = "none";
+  document.getElementById("div4").style.display = "none";
+  document.getElementById("div5").style.display = "none";
+}
+
+function op3(){
+  document.getElementById("div13").style.display = "block";
+  document.getElementById("div11").style.display = "none";
+  document.getElementById("div12").style.display = "none";
+  document.getElementById("div14").style.display = "none";
+  document.getElementById("div1").style.display = "none";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("div3").style.display = "none";
+  document.getElementById("div4").style.display = "none";
+  document.getElementById("div5").style.display = "none";
+}
+
+
 
 
